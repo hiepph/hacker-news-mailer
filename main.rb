@@ -15,7 +15,7 @@ module HackerNews
     stories = get(url)
 
     body = "<ol>"
-    stories[0...2].each do |story_id|
+    stories[0...10].each do |story_id|
       p story_id
       story_url = "https://hacker-news.firebaseio.com/v0/item/#{story_id}.json"
       story = get(story_url)

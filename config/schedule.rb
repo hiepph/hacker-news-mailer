@@ -7,7 +7,7 @@
 #
 # set :output, "/etc/logs/mailer.log"
 
-every 1.minute do
+every 3.days, at: '6:00 am' do
   rake "hacker_news"
 end
 
