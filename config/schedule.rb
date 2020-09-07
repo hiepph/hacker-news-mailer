@@ -5,7 +5,7 @@
 
 # Example:
 #
-set :output, "../logs/mailer.log"
+# set :output, "/etc/logs/mailer.log"
 
 every 1.minute do
   rake "hacker_news"
