@@ -38,7 +38,6 @@ module HackerNews
         body body
       end
     end
-    mail.delivery_method :sendmail
-    mail.deliver!
+    `echo -e "#{mail.to_s}" | ssmtp hiepph@hey.com`
   end
 end
