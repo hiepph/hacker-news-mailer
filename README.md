@@ -13,5 +13,5 @@ bundle install
 + Update cron jobs:
 
 ```
-whenver --update-crontab
+whenever --update-crontab
 ```
